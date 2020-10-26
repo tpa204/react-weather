@@ -1,14 +1,14 @@
 import React from 'react';
 
 const Weather = ({weather,message}) => {
-    if (message) {return <div><p>{message}</p></div>}
+    if (message) {return <div className='infoWeath'><p>{message}</p></div>}
     else {
     return (
-        <div>
+        <div className='infoWeath'>
             <p>Location:{weather.city}, {weather.country}</p>
             <p>Temperature: {weather.temp}</p>
             <p>Pressure: {weather.pressure}</p>
-            <p>Sunset: {weather.sunset}</p>
+            <p>Sunset: {new Date(weather.sunset*1000).toTimeString()}</p>
         </div>
     );
 }};
