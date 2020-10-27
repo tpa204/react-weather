@@ -22,7 +22,8 @@ class Data extends Component {
                     country: data.sys.country,
                     temp: data.main.temp,
                     pressure: data.main.pressure,
-                    sunset: data.sys.sunset
+                    sunset: data.sys.sunset,
+                    sunrise: data.sys.sunrise
                 },
                 message:null
             })).catch(e=> {

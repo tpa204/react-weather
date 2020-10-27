@@ -9,6 +9,7 @@ const Weather = ({weather,message}) => {
             <p>Temperature: {weather.temp}</p>
             <p>Pressure: {weather.pressure}</p>
             <p>Sunset: {new Date(weather.sunset*1000).toTimeString()}</p>
+            <p>Sunrise: {new Date(weather.sunrise*1000).toTimeString()}</p>
         </div>
     );
 }};

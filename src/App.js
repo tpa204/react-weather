@@ -12,7 +12,7 @@ function App() {
        <div className='container'>
            <div className='row'>
                <div className='col-sm-5 info'><Info/></div>
-               <div className='col-sm-7 form'><Data/></div>
+               <div className='col-sm-7 form`'><Data/></div>
            </div>
           </div>
      </div>
